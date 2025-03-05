@@ -1,6 +1,7 @@
 package me.aboullaite.testcontainersdemo.config;
 
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 import me.aboullaite.testcontainersdemo.model.InventoryEvent;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
@@ -15,9 +16,6 @@ import org.springframework.kafka.config.TopicBuilder;
 import org.springframework.kafka.core.*;
 import org.springframework.kafka.support.serializer.JsonDeserializer;
 import org.springframework.kafka.support.serializer.JsonSerializer;
-
-import java.util.HashMap;
-import java.util.Map;
 
 @Configuration
 public class KafkaConfig {
